@@ -1,0 +1,103 @@
+1.
+1
+2 2
+3 3 3
+4 4 4 4
+5 5 5 5 5
+
+n=int(input("Enter no.of rows: "))
+for i in range(1,n+1):
+  for j in range(1,n+1):
+    print(i+" ")
+  print()
+--------------
+2.Palindrome
+
+num=int(input("Enter number: "))
+temp=num
+rev=0
+while(temp>0):
+  rem=temp%10
+  rev=rev*10+rem
+  temp=temp//10
+if(num==rev):
+  print("Palindrome")
+else:
+  print("Not a palindrome")
+  
+-------------------
+3.Armstrong Number
+
+num=int(input("Enter number: "))
+temp=num
+sum=0
+while(temp>0):
+  rem=temp%10
+  sum=sum+rem**3
+  temp=temp//10
+if(num==rev):
+  print("Armstrong")
+else:
+  print("Not a Armstrong")
+  
+-----------------------
+4.area of triangle, square, rectangle
+
+b=int(input("Enter base of triangle: "))
+h=int(input("Enter height of triangle: "))
+print("Area of triangle: ",((1/2)*b*h))
+a=int(input("Enter side of triangle: "))
+print("Arrea of square: ",a*a)
+len=int(input("Enter length of rectangle: "))
+bre=int(input("Enter breadth of rectangle: "))
+print("Area of rectangle: ",len*bre)
+
+----------------------------
+5.Sort of 3 numbers
+
+a=int(input("Enter a number: ")
+b=int(input("Enter another number: ")
+c=int(input("Enter another number: ")
+p=0
+q=0
+r=0
+if(a>b):
+  if(a>c):
+    p=a
+    if(b>c):
+      q=b
+      r=c
+    else:
+      q=c
+      r=b
+  else:
+    p=c
+    if(b>a):
+      q=b
+      r=a
+    else:
+      q=a
+      r=b
+else:
+  if(b>c):
+    p=b
+    if(c>a):
+      q=c
+      r=a
+    else:
+      r=c
+      q=a
+print(r,q,p)
+
+------------------
+6.Fibonacci series
+
+a=0
+b=1
+count=2
+n=int(input("Enter a number: "))
+if(n<=2):
+  print("Enter valid number")
+else:
+  print(a,b,end=" ")
+  
